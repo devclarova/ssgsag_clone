@@ -1,0 +1,107 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid rgb(229, 231, 235);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  z-index: 999;
+  width: 100%;
+}
+header .logo {
+  margin-right: 20px;
+  align-items: center;
+  transform: translateY(4px);
+  cursor: pointer;
+}
+header .myplan {
+  cursor: pointer;
+}
+header .recommend {
+  cursor: pointer;
+}
+header .superintern {
+  cursor: pointer;
+}
+
+.header_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-right: 330px;
+  font-size: 17px;
+  color: #1c1c1c;
+  font-weight: 500;
+}
+
+.header_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.header_right .upload {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(229, 231, 235, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(119, 119, 119);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  height: 38px;
+  width: 107px;
+  justify-content: center;
+}
+.header_right .advertise {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(229, 231, 235, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(119, 119, 119);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  height: 38px;
+  width: 107px;
+  justify-content: center;
+}
+.header_right .login {
+  border: 1px solid rgb(229, 231, 235);
+  background-color: rgb(131, 127, 255);
+  color: rgb(255, 255, 255);
+  height: 38px;
+  width: 75px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.recommend {
+  position: relative;
+}
+
+.recommend::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -7px;
+  font-size: 17px;
+  font-weight: 500;
+  height: 5px;
+  width: 5px;
+  background-color: rgb(255, 82, 71);
+  border-radius: 2px;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,70 @@
+.banner {
+  position: relative;
+  padding-top: 110px;
+  overflow: visible !important;
+  .swiper-pagination {
+    position: absolute;
+    left: 0;
+    bottom: -34px;
+    .swiper-pagination-bullet-active {
+      background-color: #000;
+    }
+  }
+  .banner_wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible !important;
+    .banner_info {
+      height: 320px;
+      width: 640px;
+      overflow: visible !important;
+      .swiper-wrapper {
+        overflow: visible !important;
+      }
+      .banner_prev {
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        z-index: 100;
+        height: 48px;
+        width: 48px;
+        border: 1px solid rgb(229, 231, 235);
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translateY(-20px) rotate(180deg);
+        background-color: rgb(255, 255, 255);
+      }
+      .banner_next {
+        position: absolute;
+        top: 50%;
+        right: -25px;
+        z-index: 100;
+        height: 48px;
+        width: 48px;
+        border: 1px solid rgb(229, 231, 235);
+        border-radius: 50%;
+        transform: translateY(-20px);
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        img {
+          object-fit: cover;
+        }
+      }
+      .swiper-slide {
+        cursor: pointer;
+        width: 640px;
+        flex-shrink: 0;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 13px;
+          object-fit: cover;
+          gap: 85px;
+        }
+      }
+    }
+  }
+}
