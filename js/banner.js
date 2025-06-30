@@ -24,16 +24,10 @@ function makeSlide() {
       el: ".swiper-pagination",
       clickable: true,
     },
-    breakpoints: {
-      760: {
-        slidesPerView: 1,
-        spaceBetween: 25,
-      },
-    },
   });
   return swiper;
 }
 
-makeHtml();
+makeSlide();
 
 const swiper = makeSlide();
