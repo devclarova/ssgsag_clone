@@ -1,0 +1,36 @@
+.icon_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 46px;
+}
+.icon_link ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  cursor: pointer;
+}
+.icon_link ul .icon_list .icon_img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+}
+.icon_link ul .icon_list .icon_img img {
+  height: 48px;
+  width: 48px;
+}
+.icon_link ul .icon_list .icon_button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid rgb(229, 231, 235);
+  height: 30px;
+  width: 80px;
+  font-size: 17px;
+  margin: 6px 0 0 0;
+  cursor: pointer;
+}/*# sourceMappingURL=icon.css.map */

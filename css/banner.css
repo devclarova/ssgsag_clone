@@ -1,12 +1,13 @@
 .banner {
   position: relative;
   padding-top: 110px;
-  overflow: visible !important;
+  overflow: visible;
 }
 .banner .swiper-pagination {
   position: absolute;
   left: 0;
   bottom: -34px;
+  scale: 0.7;
 }
 .banner .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #000;
@@ -16,15 +17,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible !important;
+  overflow: visible;
+  margin-bottom: 45px;
 }
 .banner .banner_wrap .banner_info {
   height: 320px;
   width: 640px;
-  overflow: visible !important;
+  overflow: visible;
 }
 .banner .banner_wrap .banner_info .swiper-wrapper {
-  overflow: visible !important;
+  overflow: visible;
 }
 .banner .banner_wrap .banner_info .banner_prev {
   position: absolute;
