@@ -16,6 +16,9 @@ header {
     transform: translateY(4px);
     cursor: pointer;
   }
+  .menu {
+    transition: all 0.2s;
+  }
   .myplan {
     cursor: pointer;
   }
@@ -27,7 +30,7 @@ header {
   }
 }
 
-.header_left {
+.header_menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +60,12 @@ header {
     height: 38px;
     width: 107px;
     justify-content: center;
+    &:hover {
+      background-color: rgb(243, 245, 246);
+      width: 107px;
+      height: 38px;
+      transition: all 0.2s;
+    }
   }
   .advertise {
     display: flex;
@@ -72,7 +81,14 @@ header {
     height: 38px;
     width: 107px;
     justify-content: center;
+    &:hover {
+      background-color: rgb(243, 245, 246);
+      width: 107px;
+      height: 38px;
+      transition: all 0.2s;
+    }
   }
+
   .login {
     border: 1px solid rgb(229, 231, 235);
     background-color: rgb(131, 127, 255);
@@ -86,6 +102,11 @@ header {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgb(118, 114, 255);
+    }
   }
 }
 .recommend {

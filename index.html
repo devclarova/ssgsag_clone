@@ -22,6 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- CSS 및 JS 연결 -->
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/header.css" />
     <script src="js/header.js"></script>
@@ -34,19 +35,22 @@
 
     <link rel="stylesheet" href="css/cok_notice.css" />
     <script src="js/cok_notice.js"></script>
+
+    <link rel="stylesheet" href="css/hot_notice.css" />
+    <script src="js/hot_notice.js"></script>
   </head>
   <body>
     <div class="wrap">
       <div class="layout">
         <!-- 헤더 부분 -->
         <header>
-          <ul class="header_left">
+          <ul class="header_menu">
             <li class="logo">
               <img src="images/img_logo_ssgsag.svg" alt="ssgsag" />
             </li>
-            <li class="myplan">내 일정</li>
-            <li class="recommend">추천공고</li>
-            <li class="superintern">슈퍼인턴</li>
+            <li class="menu myplan">내 일정</li>
+            <li class="menu recommend">추천공고</li>
+            <li class="menu superintern">슈퍼인턴</li>
           </ul>
           <ul class="header_right">
             <li class="upload">
@@ -60,179 +64,318 @@
             <li class="login">로그인</li>
           </ul>
         </header>
-      </div>
 
-      <!-- 배너 부분 -->
-      <div class="banner">
-        <div class="banner_wrap">
-          <!-- Swiper -->
-          <div class="swiper banner_info">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="https://storage.googleapis.com/ssgsag/contents/7a6c6625-b9f9-4818-9f74-6051b4266768.png"
-                  alt="앱으로 확인하기"
-                />
+        <!-- 배너 부분 -->
+        <div class="banner">
+          <div class="banner_wrap">
+            <!-- Swiper -->
+            <div class="swiper banner_info">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://storage.googleapis.com/ssgsag/contents/7a6c6625-b9f9-4818-9f74-6051b4266768.png"
+                    alt="앱으로 확인하기"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://storage.googleapis.com/ssgsag/contents/888bf59e-5ee2-451c-a9e9-678c863531ac.png"
+                    alt="새로운 홈"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://storage.googleapis.com/ssgsag/contents/b11a66d0-c376-4505-8b82-4b2667123ecb.png"
+                    alt="대외활동"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://storage.googleapis.com/ssgsag/contents/283d0b23-2c18-4bcd-8178-7fa783838d99.png"
+                    alt="슈퍼인턴"
+                  />
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://storage.googleapis.com/ssgsag/contents/888bf59e-5ee2-451c-a9e9-678c863531ac.png"
-                  alt="새로운 홈"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://storage.googleapis.com/ssgsag/contents/b11a66d0-c376-4505-8b82-4b2667123ecb.png"
-                  alt="대외활동"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="https://storage.googleapis.com/ssgsag/contents/283d0b23-2c18-4bcd-8178-7fa783838d99.png"
-                  alt="슈퍼인턴"
-                />
-              </div>
+              <button class="banner_prev">
+                <img src="images/slider_arrow.svg" alt="이전" />
+              </button>
+              <button class="banner_next">
+                <img src="images/slider_arrow.svg" alt="다음" />
+              </button>
             </div>
-            <button class="banner_prev">
-              <img src="images/slider_arrow.svg" alt="이전" />
-            </button>
-            <button class="banner_next">
-              <img src="images/slider_arrow.svg" alt="다음" />
-            </button>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
 
-      <!-- 아이콘 링크 -->
-      <div class="icon_link">
-        <ul>
-          <li class="icon_list">
-            <div class="icon_img">
-              <span>HOT</span>
-              <img src="images/ic_activity.png" alt="대외활동" />
-            </div>
-            <button class="icon_button">
-              <p>대외활동</p>
-            </button>
-          </li>
-          <li class="icon_list">
-            <div class="icon_img">
-              <img src="images/ic_contest.png" alt="공모전" />
-            </div>
-            <button class="icon_button">
-              <p>공모전</p>
-            </button>
-          </li>
-          <li class="icon_list">
-            <div class="icon_img">
-              <img src="images/ic_internship.png" alt="인턴십" />
-            </div>
-            <button class="icon_button">
-              <p>인턴십</p>
-            </button>
-          </li>
-          <li class="icon_list">
-            <div class="icon_img">
-              <img src="images/ic_education.png" alt="교육강연" />
-            </div>
-            <button class="icon_button">
-              <p>교육강연</p>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <!-- 콕 공고 -->
-      <div class="cok_notice">
-        <div class="cok_notice_wrap">
-          <div class="cok_notice_title">슥삭이 <span>콕</span> 집은 공고</div>
-          <ul class="cok_notice_info">
-            <li>
-              <div class="cok_notice_img">
-                <img
-                  src="https://ssgsag.blob.core.windows.net/contents/7918d440-531e-11f0-936c-b1f427bfd22f.png"
-                  alt="[한경닷컴] 실시간 데이터 처리 자바 웹 서비스 개발 과정 (채용 지원)"
-                />
+        <!-- 아이콘 링크 -->
+        <div class="icon_link">
+          <ul>
+            <li class="icon_list">
+              <div class="icon_img">
+                <span>HOT</span>
+                <img src="images/ic_activity.png" alt="대외활동" />
               </div>
-              <div class="cok_notice_detail">
-                <div class="cok_detail_summary">
-                  <span class="cok_notice_edu">교육/강연</span>
-                  <span class="cok_notice_ad">AD</span>
-                </div>
-                <p class="cok_notice_detail_title">
-                  <span>UP</span>[한경닷컴] 실시간 데이터 처리 자바 웹 서비스 개발 과정 (채용
-                  지원)
-                </p>
-                <p class="cok_notice_dday">D-2</p>
-              </div>
+              <button class="icon_button">
+                <p>대외활동</p>
+              </button>
             </li>
-            <li>
-              <div class="cok_notice_img">
-                <img
-                  src="https://ssgsag.blob.core.windows.net/contents/1899ad90-5302-11f0-936c-b1f427bfd22f.png"
-                  alt="[퀄컴] 퀄컴 Edge AI 개발자 해커톤"
-                />
+            <li class="icon_list">
+              <div class="icon_img">
+                <img src="images/ic_contest.png" alt="공모전" />
               </div>
-              <div class="cok_notice_detail">
-                <div class="cok_detail_summary">
-                  <span class="cok_notice_contest">공모전</span>
-                  <span></span>
-                </div>
-                <p class="cok_notice_detail_title">[퀄컴] 퀄컴 Edge AI 개발자 해커톤</p>
-                <p class="cok_notice_dday">D-24</p>
-              </div>
+              <button class="icon_button">
+                <p>공모전</p>
+              </button>
             </li>
-            <li>
-              <div class="cok_notice_img">
-                <img
-                  src="https://ssgsag.blob.core.windows.net/contents/d6a853b0-52fb-11f0-936c-b1f427bfd22f.png"
-                  alt="[SM엔터테인먼트] 2025 SMile Music Festival 대학생 영상 서포터즈 모집"
-                />
+            <li class="icon_list">
+              <div class="icon_img">
+                <img src="images/ic_internship.png" alt="인턴십" />
               </div>
-              <div class="cok_notice_detail">
-                <div class="cok_detail_summary">
-                  <span class="cok_notice_active">대외활동</span>
-                  <span></span>
-                </div>
-                <p class="cok_notice_detail_title">
-                  [SM엔터테인먼트] 2025 SMile Music Festival 대학생
-                  영상 서포터즈 모집
-                </p>
-                <p class="cok_notice_dday">D-14</p>
-              </div>
+              <button class="icon_button">
+                <p>인턴십</p>
+              </button>
             </li>
-            <li>
-              <div class="cok_notice_img">
-                <img
-                  src="https://ssgsag.blob.core.windows.net/contents/f5cae240-5318-11f0-936c-b1f427bfd22f.png"
-                  alt="[SNOW] 8월 전분야 체험형 인턴"
-                />
+            <li class="icon_list">
+              <div class="icon_img">
+                <img src="images/ic_education.png" alt="교육강연" />
               </div>
-              <div class="cok_notice_detail">
-                <div class="cok_detail_summary">
-                  <span class="cok_notice_intern">인턴십</span>
-                  <span class="cok_notice_address">경기 성남시 분당구</span>
-                </div>
-                <p class="cok_notice_detail_title">[SNOW] 8월 전분야 체험형 인턴</p>
-                <p class="cok_notice_dday">D-6</p>
-              </div>
+              <button class="icon_button">
+                <p>교육강연</p>
+              </button>
             </li>
           </ul>
         </div>
+
+        <!-- 콕 공고 -->
+        <div class="cok_notice">
+          <div class="cok_notice_wrap">
+            <div class="cok_notice_title">슥삭이 <span>콕</span> 집은 공고</div>
+            <ul class="cok_notice_info">
+              <li>
+                <div class="cok_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/7918d440-531e-11f0-936c-b1f427bfd22f.png"
+                    alt="[한경닷컴] 실시간 데이터 처리 자바 웹 서비스 개발 과정 (채용 지원)"
+                  />
+                </div>
+                <div class="cok_notice_detail">
+                  <div class="cok_detail_summary">
+                    <span class="cok_notice_edu">교육/강연</span>
+                    <span class="cok_notice_ad">AD</span>
+                  </div>
+                  <p class="cok_notice_detail_title">
+                    <span>UP</span>[한경닷컴] 실시간 데이터 처리 자바 웹 서비스
+                    개발 과정 (채용 지원)
+                  </p>
+                  <p class="cok_notice_dday">D-2</p>
+                </div>
+              </li>
+              <li>
+                <div class="cok_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/1899ad90-5302-11f0-936c-b1f427bfd22f.png"
+                    alt="[퀄컴] 퀄컴 Edge AI 개발자 해커톤"
+                  />
+                </div>
+                <div class="cok_notice_detail">
+                  <div class="cok_detail_summary">
+                    <span class="cok_notice_contest">공모전</span>
+                    <span></span>
+                  </div>
+                  <p class="cok_notice_detail_title">
+                    [퀄컴] 퀄컴 Edge AI 개발자 해커톤
+                  </p>
+                  <p class="cok_notice_dday">D-24</p>
+                </div>
+              </li>
+              <li>
+                <div class="cok_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/d6a853b0-52fb-11f0-936c-b1f427bfd22f.png"
+                    alt="[SM엔터테인먼트] 2025 SMile Music Festival 대학생 영상 서포터즈 모집"
+                  />
+                </div>
+                <div class="cok_notice_detail">
+                  <div class="cok_detail_summary">
+                    <span class="cok_notice_active">대외활동</span>
+                    <span></span>
+                  </div>
+                  <p class="cok_notice_detail_title">
+                    [SM엔터테인먼트] 2025 SMile Music Festival 대학생 영상
+                    서포터즈 모집
+                  </p>
+                  <p class="cok_notice_dday">D-14</p>
+                </div>
+              </li>
+              <li>
+                <div class="cok_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/f5cae240-5318-11f0-936c-b1f427bfd22f.png"
+                    alt="[SNOW] 8월 전분야 체험형 인턴"
+                  />
+                </div>
+                <div class="cok_notice_detail">
+                  <div class="cok_detail_summary">
+                    <span class="cok_notice_intern">인턴십</span>
+                    <span class="cok_notice_address">경기 성남시 분당구</span>
+                  </div>
+                  <p class="cok_notice_detail_title">
+                    [SNOW] 8월 전분야 체험형 인턴
+                  </p>
+                  <p class="cok_notice_dday">D-6</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 핫한 공고 -->
+        <div class="hot_notice">
+          <div class="hot_notice_wrap">
+            <div class="hot_notice_title">
+              <span class="tilte_point">요즘 </span>핫한 공고만 찾고 있다면?
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/ebdbc830-fee5-11ef-9283-ff986ee977c1.png"
+                  alt="[고용노동부] 2025 미래내일 일경험 인턴십 참여자 모집"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_active">대외활동</div>
+                <div class="hot_notice_list_title">
+                  [고용노동부] 2025 미래내일 일경험 인턴십 참여자 모집
+                </div>
+                <div class="hot_notice_list_dday">D-181</div>
+              </div>
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/de737390-517f-11f0-936c-b1f427bfd22f.png"
+                  alt="[미리캔버스] 여행 계획만 짜고 1천만원 여행 떠나기"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_contest">공모전</div>
+                <div class="hot_notice_list_title">
+                  [미리캔버스] 여행 계획만 짜고 1천만원 여행 떠나기
+                </div>
+                <div class="hot_notice_list_dday">D-10</div>
+              </div>
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/902271c0-009c-11f0-b7b0-5f21ece0fe81.png"
+                  alt="[제임스 다이슨 재단]  국제 엔지니어링 및 디자인 공모전 제임스 다이슨 어워드 2025"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_contest">공모전</div>
+                <div class="hot_notice_list_title">
+                  [제임스 다이슨 재단] 국제 엔지니어링 및 디자인 공모전 제임스
+                  다이슨 어워드 2025
+                </div>
+                <div class="hot_notice_list_dday">D-13</div>
+              </div>
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/9f4dcc30-2c7f-11f0-af3e-b31bf137e3de.png"
+                  alt="[우정산업본부] 2025 대한민국 편지쓰기 공모전"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_contest">공모전</div>
+                <div class="hot_notice_list_title">
+                  [우정산업본부] 2025 대한민국 편지쓰기 공모전
+                </div>
+                <div class="hot_notice_list_dday">D-18</div>
+              </div>
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/54531310-14fc-11f0-ad8a-bb7ba2d934e7.png"
+                  alt="[한국언론진흥재단] 제6회 뉴스읽기 뉴스일기 공모전"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_contest">공모전</div>
+                <div class="hot_notice_list_title">
+                  [한국언론진흥재단] 제6회 뉴스읽기 뉴스일기 공모전
+                </div>
+                <div class="hot_notice_list_dday">D-28</div>
+              </div>
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/fb8535a0-0610-11f0-b7b0-5f21ece0fe81.png"
+                  alt="[(주)패스프리] 패스프리 로고 디자인 공모전"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_contest">공모전</div>
+                <div class="hot_notice_list_title">
+                  [(주)패스프리] 패스프리 로고 디자인 공모전
+                </div>
+                <div class="hot_notice_list_dday">D-28</div>
+              </div>
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/b5349b50-14e7-11f0-ad8a-bb7ba2d934e7.png"
+                  alt="[KUDAF] 2025 대한민국 대학생 디지털 광고제"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_contest">공모전</div>
+                <div class="hot_notice_list_title">
+                  [KUDAF] 2025 대한민국 대학생 디지털 광고제
+                </div>
+                <div class="hot_notice_list_dday">D-85</div>
+              </div>
+            </div>
+
+            <div class="hot_notice_list">
+              <div class="hot_notice_image">
+                <img
+                  src="https://ssgsag.blob.core.windows.net/contents/74053150-517b-11f0-936c-b1f427bfd22f.png"
+                  alt="[SK그룹] SK Careers Editor 22기 모집(~25.07.06)"
+                />
+              </div>
+              <div class="hot_notice_text">
+                <div class="hot_notice_active">대외활동</div>
+                <div class="hot_notice_list_title">
+                  [SK그룹] SK Careers Editor 22기 모집(~25.07.06)
+                </div>
+                <div class="hot_notice_list_dday">D-3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 게시된 공고 -->
+        <div class="already_notice"></div>
+
+        <!-- 앱설치 안내 -->
+        <div class="install_info"></div>
+
+        <!-- footer -->
+        <div class="footer"></div>
       </div>
-
-      <!-- 핫한 공고 -->
-      <div class="hot_notice"></div>
-
-      <!-- 게시된 공고 -->
-      <div class="already_notice"></div>
-
-      <!-- 앱설치 안내 -->
-      <div class="install_info"></div>
-
-      <!-- footer -->
-      <div class="footer"></div>
     </div>
   </body>
 </html>
