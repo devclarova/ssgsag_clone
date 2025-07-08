@@ -22,6 +22,7 @@
 .cok_notice .cok_notice_wrap .cok_notice_info {
   display: flex;
   gap: 25px;
+  cursor: pointer;
 }
 .cok_notice .cok_notice_wrap .cok_notice_info li {
   display: block;
