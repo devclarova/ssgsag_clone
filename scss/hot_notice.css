@@ -1,0 +1,99 @@
+.hot_notice {
+  height: 680px;
+  padding: 65px 0;
+  display: flex;
+  justify-content: center;
+}
+.hot_notice .hot_notice_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  width: 490px;
+  max-width: 1280px;
+  margin: 0 auto;
+  row-gap: 12px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.hot_notice .hot_notice_wrap .hot_notice_title {
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.hot_notice .hot_notice_wrap .hot_notice_title .tilte_point {
+  color: rgb(90, 100, 249);
+}
+.hot_notice .hot_notice_wrap .hot_notice_list {
+  position: relative;
+  border: none;
+  border-radius: 18px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 45px 10px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 18px;
+  height: 120px;
+  width: 480px;
+}
+.hot_notice .hot_notice_wrap .hot_notice_list:hover {
+  background-color: #f2f4f6;
+}
+.hot_notice .hot_notice_wrap .hot_notice_list:hover img {
+  transform: scale(1.1);
+}
+.hot_notice .hot_notice_wrap .hot_notice_list .hot_notice_image {
+  display: inline-table;
+  margin-right: 13px;
+  overflow: hidden;
+  border-radius: 10px;
+  transform-origin: center center;
+}
+.hot_notice .hot_notice_wrap .hot_notice_list .hot_notice_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.hot_notice .hot_notice_wrap .hot_notice_list .hot_notice_text .hot_notice_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(95, 38, 205);
+  background-color: rgb(242, 238, 251);
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  width: 48px;
+  height: 20px;
+  border-radius: 3px;
+}
+.hot_notice .hot_notice_wrap .hot_notice_list .hot_notice_text .hot_notice_contest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(52, 109, 243);
+  background-color: rgb(239, 243, 254);
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  width: 48px;
+  height: 20px;
+  border-radius: 3px;
+}
+.hot_notice .hot_notice_wrap .hot_notice_list .hot_notice_text .hot_notice_list_title {
+  font-size: 14px;
+  font-weight: 500;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.hot_notice .hot_notice_wrap .hot_notice_list .hot_notice_text .hot_notice_list_dday {
+  position: absolute;
+  top: 70%;
+  font-size: 17px;
+  font-weight: 600;
+}/*# sourceMappingURL=hot_notice.css.map */

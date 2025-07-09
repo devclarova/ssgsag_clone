@@ -43,26 +43,28 @@
     <div class="wrap">
       <div class="layout">
         <!-- 헤더 부분 -->
-        <header>
-          <ul class="header_menu">
-            <li class="logo">
+        <header class="header">
+          <div class="header_wrap">
+            <a scr="#" class="logo">
               <img src="images/img_logo_ssgsag.svg" alt="ssgsag" />
-            </li>
-            <li class="menu myplan">내 일정</li>
-            <li class="menu recommend">추천공고</li>
-            <li class="menu superintern">슈퍼인턴</li>
-          </ul>
-          <ul class="header_right">
-            <li class="upload">
-              <img src="images/ic_upload.svg" alt="공고등록" />
-              공고등록
-            </li>
-            <li class="advertise">
-              <img src="images/ic_advertise.svg" alt="광고문의" />
-              광고문의
-            </li>
-            <li class="login">로그인</li>
-          </ul>
+            </a>
+            <ul class="header_menu">
+              <li class="menu myplan">내 일정</li>
+              <li class="menu recommend">추천공고</li>
+              <li class="menu superintern">슈퍼인턴</li>
+            </ul>
+            <div class="header_right">
+              <a src="#" class="upload">
+                <img src="images/ic_upload.svg" alt="공고등록" />
+                공고등록
+              </a>
+              <a src="#" class="advertise">
+                <img src="images/ic_advertise.svg" alt="광고문의" />
+                광고문의
+              </a>
+              <a src="#" class="login">로그인</a>
+            </div>
+          </div>
         </header>
 
         <!-- 배너 부분 -->
@@ -103,47 +105,49 @@
                 <img src="images/slider_arrow.svg" alt="다음" />
               </button>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
 
         <!-- 아이콘 링크 -->
         <div class="icon_link">
-          <ul>
-            <li class="icon_list">
-              <div class="icon_img">
-                <span>HOT</span>
-                <img src="images/ic_activity.png" alt="대외활동" />
-              </div>
-              <button class="icon_button">
-                <p>대외활동</p>
-              </button>
-            </li>
-            <li class="icon_list">
-              <div class="icon_img">
-                <img src="images/ic_contest.png" alt="공모전" />
-              </div>
-              <button class="icon_button">
-                <p>공모전</p>
-              </button>
-            </li>
-            <li class="icon_list">
-              <div class="icon_img">
-                <img src="images/ic_internship.png" alt="인턴십" />
-              </div>
-              <button class="icon_button">
-                <p>인턴십</p>
-              </button>
-            </li>
-            <li class="icon_list">
-              <div class="icon_img">
-                <img src="images/ic_education.png" alt="교육강연" />
-              </div>
-              <button class="icon_button">
-                <p>교육강연</p>
-              </button>
-            </li>
-          </ul>
+          <div class="icon_link_wrap">
+            <ul>
+              <li class="icon_list">
+                <div class="icon_img">
+                  <span>HOT</span>
+                  <img src="images/ic_activity.png" alt="대외활동" />
+                </div>
+                <button class="icon_button">
+                  <p>대외활동</p>
+                </button>
+              </li>
+              <li class="icon_list">
+                <div class="icon_img">
+                  <img src="images/ic_contest.png" alt="공모전" />
+                </div>
+                <button class="icon_button">
+                  <p>공모전</p>
+                </button>
+              </li>
+              <li class="icon_list">
+                <div class="icon_img">
+                  <img src="images/ic_internship.png" alt="인턴십" />
+                </div>
+                <button class="icon_button">
+                  <p>인턴십</p>
+                </button>
+              </li>
+              <li class="icon_list">
+                <div class="icon_img">
+                  <img src="images/ic_education.png" alt="교육강연" />
+                </div>
+                <button class="icon_button">
+                  <p>교육강연</p>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- 콕 공고 -->
@@ -235,7 +239,6 @@
             <div class="hot_notice_title">
               <span class="tilte_point">요즘 </span>핫한 공고만 찾고 있다면?
             </div>
-
             <div class="hot_notice_list">
               <div class="hot_notice_image">
                 <img
@@ -367,8 +370,125 @@
           </div>
         </div>
 
-        <!-- 게시된 공고 -->
-        <div class="already_notice"></div>
+        <!-- 방금 게시된 공고 -->
+        <div class="now_notice">
+          <div class="now_notice_wrap">
+            <div class="now_notice_title">
+              <span>방금</span> 게시된 공고만 찾고 있다면?
+            </div>
+            <ul class="now_notice_info">
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/fcbd0170-5bc7-11f0-adf2-9366fd63092c.png"
+                    alt="[새만금개발청] 2025년 새만금 공공데이터 활용 경진대회"
+                  />
+                </div>
+                <div class="now_notice_contest">공모전</div>
+                <div class="now_notice_info_title">
+                  [새만금개발청] 2025년 새만금 공공데이터 활용 경진대회
+                </div>
+                <div class="now_notice_info_dday">D-22</div>
+              </li>
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/0e8e5e90-5b09-11f0-b1f5-1f18f8266b4c.png"
+                    alt="[팀스파르타] AI 디지털 마케터 부트캠프"
+                  />
+                </div>
+                <span class="now_notice_edu">교육/강연</span>
+                <div class="now_notice_info_title">
+                  [팀스파르타] AI 디지털 마케터 부트캠프
+                </div>
+                <div class="now_notice_info_dday">D-25</div>
+              </li>
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/10a30330-5b08-11f0-b1f5-1f18f8266b4c.png"
+                    alt="[스파르타코딩클럽]대학생 앰배서더 스파클 2기"
+                  />
+                </div>
+                <span class="now_notice_active">대외활동</span>
+                <div class="now_notice_info_title">
+                  [스파르타코딩클럽]대학생 앰배서더 스파클 2기
+                </div>
+                <div class="now_notice_info_dday">D-5</div>
+              </li>
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/b986ee70-5b04-11f0-b1f5-1f18f8266b4c.png"
+                    alt="[오비맥주] 크리에이티브 공모전 Creative X Challengers 참가자 모집"
+                  />
+                </div>
+                <span class="now_notice_contest">공모전</span>
+                <div class="now_notice_info_title">
+                  [오비맥주] 크리에이티브 공모전 Creative X Challengers 참가자
+                  모집
+                </div>
+                <div class="now_notice_info_dday">D-2</div>
+              </li>
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/bc2e4080-5adf-11f0-b1f5-1f18f8266b4c.png"
+                    alt="[PTKOREA/인턴] 기업문화팀 총무"
+                  />
+                </div>
+                <span class="now_notice_intern">인턴십</span>
+                <span class="now_notice_address">서울 강남구</span>
+                <div class="now_notice_info_title">
+                  [PTKOREA/인턴] 기업문화팀 총무
+                </div>
+                <div class="now_notice_info_dday">D-22</div>
+              </li>
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/2ef77350-5ad8-11f0-b1f5-1f18f8266b4c.png"
+                    alt="[와이어트] 틱톡 마케터 전환형 인턴"
+                  />
+                </div>
+                <span class="now_notice_intern">인턴십</span>
+                <span class="now_notice_address">서울 강남구</span>
+                <div class="now_notice_info_title">
+                  [와이어트] 틱톡 마케터 전환형 인턴
+                </div>
+                <div class="now_notice_info_dday">D-6</div>
+              </li>
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/fabc2c70-5ad7-11f0-b1f5-1f18f8266b4c.png"
+                    alt="[NAVER Cloud] AI 사업 전략 및 리서치 체험형 인턴"
+                  />
+                </div>
+                <span class="now_notice_intern">인턴십</span>
+                <span class="now_notice_address">경기 성남시 분당구</span>
+                <div class="now_notice_info_title">
+                  [NAVER Cloud] AI 사업 전략 및 리서치 체험형 인턴
+                </div>
+                <div class="now_notice_info_dday">D-2</div>
+              </li>
+              <li class="now_notice_list">
+                <div class="now_notice_img">
+                  <img
+                    src="https://ssgsag.blob.core.windows.net/contents/eaad4da0-5ad7-11f0-b1f5-1f18f8266b4c.png"
+                    alt="[커뮤니케이션앤컬쳐] 전략기획팀 전략기획 및 마케팅 전략"
+                  />
+                </div>
+                <span class="now_notice_inturn">인턴십</span>
+                <span class="now_notice_address">서울 중구</span>
+                <div class="now_notice_info_title">
+                  [커뮤니케이션앤컬쳐] 전략기획팀 전략기획 및 마케팅 전략
+                </div>
+                <div class="now_notice_info_dday">D-2</div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <!-- 앱설치 안내 -->
         <div class="install_info"></div>

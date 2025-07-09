@@ -1,6 +1,4 @@
-.header {
-}
-.header_wrap {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,22 +11,22 @@
   z-index: 999;
   width: 100%;
 }
-.header .logo {
+header .logo {
   margin-right: 20px;
   align-items: center;
   transform: translateY(4px);
   cursor: pointer;
 }
-.header .menu {
+header .menu {
   transition: all 0.2s;
 }
-.header .myplan {
+header .myplan {
   cursor: pointer;
 }
-.header .recommend {
+header .recommend {
   cursor: pointer;
 }
-.header .superintern {
+header .superintern {
   cursor: pointer;
 }
 
@@ -125,4 +123,4 @@
   width: 5px;
   background-color: rgb(255, 82, 71);
   border-radius: 2px;
-} /*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */
